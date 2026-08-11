@@ -1,4 +1,4 @@
-package poo.encapsulamento_c3.exercicios;
+package poo.encapsulamento_c3.exercicio_um;
 
 public class Aluno {
     private String nome;
