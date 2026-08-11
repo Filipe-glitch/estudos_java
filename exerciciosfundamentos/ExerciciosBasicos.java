@@ -1,5 +1,6 @@
 package exerciciosfundamentos;
 import java.util.Scanner;
+
 public class ExerciciosBasicos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -20,6 +21,36 @@ public class ExerciciosBasicos {
         double fahrenheit = (celsius * 9.0 / 5) + 32;
         System.out.println("20°C em Fahrenheit: " + fahrenheit);
 
+        // Diferença Absoluta de Idade
+        System.out.print("\nDigite o primeiro nome e idade (ex: Ana 25): ");
+        String nome1 = scanner.next();
+        int idade1 = scanner.nextInt();
+
+        System.out.print("Digite o segundo nome e idade (ex: Bruno 30): ");
+        String nome2 = scanner.next();
+        int idade2 = scanner.nextInt();
+
+        int diferenca = Math.abs(idade1 - idade2);
+        System.out.println("Diferença de idade entre " + nome1 + " e " + nome2 + ": " + diferenca + " anos.");
+
+        // Validação de Entrada de Conta via Split
+        scanner.nextLine(); // Limpa o buffer do scanner
+        System.out.print("\nDigite Nome e Tipo de Conta (ex: Maria corrente): ");
+        String input = scanner.nextLine();
+        String[] partes = input.split(" ");
+
+        if (partes.length >= 2) {
+            String nome = partes[0];
+            String tipo = partes[1].toLowerCase();
+
+            if (tipo.equals("corrente") || tipo.equals("poupanca") || tipo.equals("investimento")) {
+                System.out.printf("Bem-vindo(a), %s! Sua conta %s está pronta para uso.\n", nome, tipo);
+            } 
+            else {
+                System.out.println("Tipo de conta inválido.");
+            }
+        }
+
         // Classificação de Livro
         char categoria = 'F';
         String categoriaDescricao = switch (categoria) {
@@ -29,7 +60,7 @@ public class ExerciciosBasicos {
             case 'H' -> "História";
             default -> "Categoria inválida";
         };
-        System.out.println("Categoria do livro: " + categoriaDescricao);
+        System.out.println("\nCategoria do livro: " + categoriaDescricao);
 
         // Verificação de Paridade e Categoria de Preço
         int num = -8;

@@ -18,7 +18,49 @@ public class ExerciciosLacos {
         for (int valor : valores) somaTotal += valor;
         System.out.println("Soma total do array: " + somaTotal);
 
+        // Verificador de Múltiplos
+        System.out.print("\nInforme o número base para verificação: ");
+        int base = scanner.nextInt();
+        boolean continuar = true;
+
+        while (continuar) {
+            System.out.print("Informe um número para testar (deve ser >= " + base + "): ");
+            int teste = scanner.nextInt();
+
+            if (teste < base) {
+                System.out.println("Aviso: Informe um número maior ou igual a " + base);
+                continue;
+            }
+
+            int resto = teste % base;
+            continuar = (resto == 0);
+            System.out.printf("%d %% %d = %d (Múltiplo: %b)\n", teste, base, resto, continuar);
+        }
+
+        // Intervalo Decrescente (Filtro Pares ou Ímpares)
+        System.out.print("\nDigite o valor inicial (menor): ");
+        int inicio = scanner.nextInt();
+        System.out.print("Digite o valor final (maior): ");
+        int fim = scanner.nextInt();
+
+        if (fim >= inicio) {
+            System.out.print("Exibir (1) Pares ou (2) Ímpares? ");
+            int opcao = scanner.nextInt();
+
+            System.out.println("Resultado em ordem decrescente:");
+            for (int i = fim; i >= inicio; i--) {
+                if ((opcao == 1 && i % 2 == 0) || (opcao == 2 && i % 2 != 0)) {
+                    System.out.print(i + " ");
+                }
+            }
+            System.out.println();
+        } 
+        else {
+            System.out.println("Erro: O valor final precisa ser maior que o inicial.");
+        }
+
         // Maior Número a partir de Entrada Formatada
+        scanner.nextLine(); // Limpa o buffer
         System.out.print("\nDigite números separados por espaço (ex: 10 45 3 22): ");
         String[] numerosStr = scanner.nextLine().split(" ");
         int maior = Integer.MIN_VALUE;
