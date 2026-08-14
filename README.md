@@ -74,15 +74,12 @@ Exercício de consumo de API utilizando dados de receitas e refeições.
 ```bash
 git clone https://github.com/SEU-USUARIO/estudos_java.git
 cd estudos_java
-```
 
 ### 2. Abrir no VS Code
 
 Abra a pasta do projeto no Visual Studio Code.
 
-Recomenda-se instalar a extensão:
-
-Extension Pack for Java
+Recomenda-se instalar a extensão: Extension Pack for Java
 
 ### 3. Dependência Gson
 
