@@ -104,9 +104,10 @@ Navegue até a classe que possui o método main que deseja executar.
 
 ```bash
 Por exemplo: poo/api_consumo_c11/viacep_busca/Principal.java
+```
 
 No VS Code, clique em Run acima do método main.
-```
+
 ## 👨‍💻 Autor
 
 Filipe Mariano Rocha
