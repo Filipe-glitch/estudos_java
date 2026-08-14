@@ -67,12 +67,14 @@ Exercício de consumo de API utilizando dados de receitas e refeições.
 
 ## 🚀 Como Executar o Projeto
 
+## 🚀 Como Executar o Projeto
+
 ### 1. Clonar o repositório
+
+```bash
 git clone https://github.com/SEU-USUARIO/estudos_java.git
-
-Entre na pasta do projeto:
-
 cd estudos_java
+```
 
 ### 2. Abrir no VS Code
 
