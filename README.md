@@ -67,13 +67,12 @@ Exercício de consumo de API utilizando dados de receitas e refeições.
 
 ## 🚀 Como Executar o Projeto
 
-## 🚀 Como Executar o Projeto
-
 ### 1. Clonar o repositório
 
 ```bash
 git clone https://github.com/SEU-USUARIO/estudos_java.git
 cd estudos_java
+```
 
 ### 2. Abrir no VS Code
 
@@ -85,27 +84,29 @@ Recomenda-se instalar a extensão: Extension Pack for Java
 
 A biblioteca gson-2.14.0.jar deve estar localizada na pasta:
 
+```bash
 lib/
 └── gson-2.14.0.jar
+```
 
 O projeto utiliza o arquivo .vscode/settings.json para reconhecer automaticamente as bibliotecas .jar dentro da pasta lib:
-
+```bash
 {
   "java.project.referencedLibraries": [
     "lib/**/*.jar"
   ]
 }
+```
 
 ### 4. Executar
 
 Navegue até a classe que possui o método main que deseja executar.
 
-Por exemplo:
-
-poo/api_consumo_c11/viacep_busca/Principal.java
+```bash
+Por exemplo: poo/api_consumo_c11/viacep_busca/Principal.java
 
 No VS Code, clique em Run acima do método main.
-
+```
 ## 👨‍💻 Autor
 
 Filipe Mariano Rocha
