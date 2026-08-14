@@ -36,28 +36,30 @@ estudos_java/
     ├── erros_excecoes_c10/           # Tratamento de exceções
     └── api_consumo_c11/              # APIs REST e JSON
 
+```
+
 🔹 Alguns Projetos Práticos
 
 ### 📍 ViaCEP
 
 Aplicação para consulta de endereços utilizando a API ViaCEP.
 
-Consumo de API REST
-Requisições HTTP
-Desserialização de JSON
-Uso de Records
-Gravação dos dados em arquivo JSON
+- Consumo de API REST
+- Requisições HTTP
+- Desserialização de JSON
+- Uso de Records
+- Gravação dos dados em arquivo JSON
 
 ### 🎬 OMDb
 
 Aplicação para busca de filmes utilizando a API OMDb.
 
-Busca interativa de filmes
-Consumo de API REST
-Manipulação de JSON
-Uso do Gson
-Records
-Exportação dos resultados para JSON
+- Busca interativa de filmes
+- Consumo de API REST
+- Manipulação de JSON
+- Uso do Gson
+- Records
+- Exportação dos resultados para JSON
 
 ### 🍽️ TheMealDB
 
